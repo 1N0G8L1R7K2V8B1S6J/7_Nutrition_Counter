@@ -47,7 +47,10 @@ if cap.isOpened():
             cv2.imshow("Text Frame",frame)
             cv2.waitKey(1)
            
-            #press 'q' to break out of the loop
+            # # Press 'q' to break out of the loop
+            # if cv2.waitKey(1) & 0xFF == ord('q'):
+            #     break
+
             if cv2.getWindowProperty("Text Frame", cv2.WND_PROP_VISIBLE) < 1:
                 break
 
