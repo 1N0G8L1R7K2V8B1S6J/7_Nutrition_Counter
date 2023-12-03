@@ -1,15 +1,16 @@
-# Installation Guide (For devs) :
+# Installation Guide (For devs)
 
-
-## Simple setup :
+## Simple setup
 
 * install pipreqs and use it to generate requirements.txt:
+
 ```
     pip install pipreqs
     pipreqs ./
 ```
 
 * install all libraries mentioned in requirements.txt:
+
 ```
     pip install -r requirements.txt
 ```
@@ -18,9 +19,9 @@
 
 ***
 
-## Alternate (If above method does not work) :
+## Alternate (If above method does not work)
 
-### install libraries manually:
+### install libraries manually
 
 * upgrade pillow (for simpler image I/O) :
 
@@ -28,7 +29,9 @@
     python3 -m pip install --upgrade pip
     python3 -m pip install --upgrage pillow
 ```
+
 * xlib
+
 ```
     pip install python-xlib
 ```
