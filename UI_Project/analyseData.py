@@ -94,11 +94,10 @@ def display(data):
     plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=140)
     plt.title('Nutritional Composition')
 
-    plt.savefig('pie_chart.png')
+    plt.savefig('static/pie_chart.png')
     plt.axis('equal')
     # plt.show()
 
 if __name__ == "__main__":
     processData()
- 
 

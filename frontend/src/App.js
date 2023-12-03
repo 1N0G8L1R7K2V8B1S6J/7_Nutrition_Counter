@@ -10,32 +10,32 @@ import LandingPage from "./pages/LandingPage";
 import Navbar from "./components/Navbar";
 
 function App() {
-  const { user } = useAuthContext();
+    const { user } = useAuthContext();
 
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <div className="pages">
-          <Routes>
-            <Route
-              path="/"
-              element={user ? <Home /> : <Navigate to="/login" />}
-            />
-            <Route
-              path="/login"
-              element={!user ? <LandingPage /> : <Navigate to="/" />}
-            />
-            <Route
-              path="/signup"
-              element={!user ? <LandingPage /> : <Navigate to="/" />}
-            />
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <div className="pages">
+                    <Routes>
+                        <Route
+                            path="/"
+                            element={user ? <Home /> : <Navigate to="/login" />}
+                        />
+                        <Route
+                            path="/login"
+                            element={!user ? <LandingPage /> : <Navigate to="/" />}
+                        />
+                        <Route
+                            path="/signup"
+                            element={!user ? <LandingPage /> : <Navigate to="/" />}
+                        />
 
-            <Route path="/analysis/:encodedData" element={<Analysis />} />
-          </Routes>
+                        <Route path="/analysis/:encodedData" element={<Analysis />} />
+                    </Routes>
+                </div>
+            </BrowserRouter>
         </div>
-      </BrowserRouter>
-    </div>
-  );
+    );
 }
 
 export default App;

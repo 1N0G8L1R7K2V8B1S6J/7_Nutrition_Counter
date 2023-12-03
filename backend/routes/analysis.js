@@ -1,10 +1,10 @@
 const express = require('express')
 
 const {
-  getAllAnalysis,
-  getSingleAnalysis,
-  createAnalysis,
-  deleteAnalysis
+    getAllAnalysis,
+    getSingleAnalysis,
+    createAnalysis,
+    deleteAnalysis
 } = require('../controllers/analysisController')
 
 //This is used for protecting the api routes
