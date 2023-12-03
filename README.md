@@ -3,8 +3,17 @@
 ## Simple setup
 
 install node modules in frontend and backend respectively
-then open backend in terminal : nodemon script.js
-open another frontend in terminal : npm start
+then open backend in terminal : 
+
+```
+nodemon script.js
+```
+
+open another frontend in terminal : 
+
+```
+npm start
+```
 
 * install pipreqs and use it to generate requirements.txt:
 
