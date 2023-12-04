@@ -7,7 +7,6 @@ def processData():
 
     f = open("output.txt", "r")
     strData = ""
-    # while(1):
     try:
         for i in f.readlines():
             l = i.split()
@@ -16,12 +15,6 @@ def processData():
                 for data in l:
                     strData += data
                 strData += " "
-        # print(strData)
-        # print(type(strData))
-        # print(convert_to_json(strData))
-        # print(type(nutritionData), type(jsonData))
-        # jsonData = json.loads(strData)
-        # print(jsonData[0], jsonData[1])
         convert_to_json(strData)
 
     except:
@@ -29,7 +22,6 @@ def processData():
 
 
 def convert_to_json(data):
-    print(data)
     nutrients =  [['Calories', 'Cal', 'Energy'],
         ['Fat', 'Total_Fat', 'TotalFat'], 
         ['Saturated Fat', 'Sat.Fat', 'Sat_Fat'],
@@ -60,6 +52,7 @@ def convert_to_json(data):
                         break
                 # UNIT
                 unit = ""
+                unitsList = []
                 while(endInd < len(data) and data[endInd].isalpha()):
                     unit += data[endInd]
                     endInd += 1
@@ -68,8 +61,10 @@ def convert_to_json(data):
                         quantity = quantity[:len(quantity)]
                         unit = "g"
                     result[k[0]] = quantity
+                    unitsList.append(unit)
                 else:
                     result[k[0]] = "0"
+                    unitsList.append('g')
                 break
     finalOutput = {}
     printData = {}
@@ -80,14 +75,11 @@ def convert_to_json(data):
             finalOutput[k] = float(v)
     with open('nutri.json', 'w') as file:
         json.dump(finalOutput, file, indent=2)
-    # print(type(nutritionData), type(jsonData))
-    # strData = json.dumps(result)
     print(result)
     display(finalOutput)
     return result
 
 def display(data):
-    print(data)
     labels = data.keys()
     sizes = data.values()
 
@@ -96,8 +88,8 @@ def display(data):
 
     plt.savefig('static/pie_chart.png')
     plt.axis('equal')
-    # plt.show()
 
 if __name__ == "__main__":
     processData()
+ 
 
