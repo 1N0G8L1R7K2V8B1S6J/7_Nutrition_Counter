@@ -66,6 +66,9 @@ npm start
 
 # Nutrition_Counter
 
+https://docs.google.com/presentation/d/1Zfi0qlUjYUWzmfQ_Rg-6u5QeCXLvKvjQGG_46gKtbr0/edit
+https://docs.google.com/document/d/1T9SCVKdqzVlnz2eeLPkzPz43b7iY5wknegbs0bIUxWQ/edit
+
 Update!
 Second Update!!!
 FOurth Update!! by Hemanth
