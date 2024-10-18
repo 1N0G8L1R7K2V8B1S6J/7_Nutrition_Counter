@@ -71,14 +71,3 @@ https://docs.google.com/presentation/d/1Zfi0qlUjYUWzmfQ_Rg-6u5QeCXLvKvjQGG_46gKt
 
 https://docs.google.com/document/d/1T9SCVKdqzVlnz2eeLPkzPz43b7iY5wknegbs0bIUxWQ/edit
 
-Update!
-Second Update!!!
-FOurth Update!! by Hemanth
-
-contains / per ---> (100g)  ---> index  ----> rest same index....
-
-Fat ---> Total, Saturated, Trans......
-
-Approach 2
-Ratio.........
-
